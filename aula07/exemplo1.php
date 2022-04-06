@@ -11,5 +11,5 @@
     if($indice === false)
       echo 'Aluno não encontrado';
     else
-        echo 'Aluno encontrado na posição '.$indice;
+        echo 'Aluno encontrado na posição '.$indice; 
 ?>
