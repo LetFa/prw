@@ -1,0 +1,9 @@
+fieldset#sexo {
+    width: 100px;
+    height: 60px;
+}
+div.dropdown-child {
+    background: pink;
+    width: 100px;
+    height: 110px;
+}
