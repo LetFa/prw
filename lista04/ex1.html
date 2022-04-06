@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soma</title>
+</head>
+<body>
+    <h1>Escolha a opção desejada</h1>
+    <hr>
+    <form method="post" action="calculo.php">
+        
+        <input type="radio" name="tCaul" id="cSoma" value="0"> <label for="cSoma">Soma</label>
+        <input type="radio" name="tCaul" id="cSubr" value="1"> <label for="cSubr">Subtrair</label>
+        <input type="radio" name="tCaul" id="cDiv"  value="2"> <label for="cDiv">Dividir</label>
+        <input type="radio" name="tCaul" id="cMul"  value="3"> <label for="cMul">Multiplicar</label>
+    
+        <div>
+            <label for="numero">Numero 1:</label>
+            <input name="number1" type="text">
+        </div>
+        <div>
+            <label for="numero">Numero 2:</label>
+            <input name="number2" type="text">
+        </div>
+        <div>            
+            <button  type="submit">enviar</button>
+        </div>
+    </form>  
+</body>
+</html>
