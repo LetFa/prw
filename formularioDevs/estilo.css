@@ -1,0 +1,41 @@
+body {
+    background-color: rgb(224, 195, 248);
+}
+header{
+    font: normal 10pt Arial;
+    text-align: center;
+    
+}
+fieldset {
+    text-align: left;
+    padding: 20px;
+    margin: auto;
+    width: 500px;
+    height: 200px;
+
+}
+div#botao {
+    text-align: center;
+}
+div {
+    text-align: left;
+    padding: 5px;
+}
+label#nome  {
+    padding: 10px;
+}
+label#telefone {
+    padding: 10px;
+}
+label#email {
+    padding: 10px;
+}
+label#radio {
+    padding: 10px;  
+}
+label {
+    padding: 10px;
+}
+label#senioridade {
+    padding: 10px;
+}
