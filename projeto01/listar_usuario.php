@@ -9,6 +9,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Listagem de Usuario</title>
+    <link rel="stylesheet" href="estil.css">
 </head>
 <body>
     <h1>Listagem de Usuario</h1>
