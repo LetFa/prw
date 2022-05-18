@@ -1,43 +1,45 @@
 <?php
    include('conexao.php');
    $id_usuario = $_GET['id_usuario'];
-   $sql = 'SELECT * FROM usuario where id_usuario ='.$id_usuario;
+   $sql = 'SELECT * FROM usuario where id_usuario='.$id_usuario;
    $result = mysqli_query($con, $sql);
    $row = mysqli_fetch_array($result);
 ?>
 
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulario</title>
-    <link rel="stylesheet" href="estilo.css"> 
+    <title>Cadastro de clientes</title>
+    <link rel="stylesheet" href="estilo.css">
 </head>
 <body>
-     <h1>Alteração de Usuario</h1>
-     <form method="post" action="cadastro_usuario.php">
-      <fieldset><legend>Preencha as informações abaixos</legend>  
-     <div>
-        <label for="nome">Nome:</label>
-        <input name="tNome1"  value="<?php echo $row['nome_usuario']?>" type="text" placeholder="informe seu nome" size="50">
+    <h1>Cadastro de Clientes  - IFSP</h1>
+    <div id="teste">
+        <form method="post" action="altera_usuario_exe.php">
+            <fieldset>
+                <legend>Cadastro</legend>
+                <div class="form-item">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" value="<?php echo $row['nome_usuario']?>" placeholder="Digite o nome">
+                </div>
+                <div class="form-item">
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" value="<?php echo $row['email_usuario']?>" placeholder="Digite o email">
+                </div>
+                <div class="form-item">
+                    <label for="telefone">Telefone:</label>
+                    <input type="text" id="telefone" name="telefone" value="<?php echo $row['telefone_usuario']?>" placeholder="Digite o Telefone">
+                </div>
+                <div class="form-item">
+                    <input id="btn" type="submit" value="Enviar" >
+                    <a href='index.php'> Voltar</a>
+                </div>
+                <input name="id_usuario" type="hidden" value="<?php echo $row['id_usuario']?>">
+            </fieldset>
+        </form>
     </div>
-</br>
-    <div>
-        <label for="email">E-mail:</label>
-        <input name="tEmail1" value="<?php echo $row['email_usuario']?>"  type="text" placeholder="@gmail.com" size="50">
-    </div>
-</br>
-    <div>
-        <label for="telefone">Telefone:</label>
-        <input name="tTelefone1" value="<?php echo $row['telefone_usuario']?>"  type="text" placeholder="numero" size="30">
-    </div>
-</br>
-    <div id="botao">            
-        <button  type="submit">enviar</button>
-    </div>
-    </fieldset>
-   </form>
 </body>
 </html>
