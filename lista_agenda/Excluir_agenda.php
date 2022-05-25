@@ -14,6 +14,7 @@
 		echo "Erro ao tentar excluir usuário: ".mysqli_error($con)."<br>";
   
 ?>
+<br>
 <a href='listar_agenda.php'> Voltar</a>
 
 <!DOCTYPE html>
@@ -26,6 +27,10 @@
 	<style>
 		body{
 			background-color: FireBrick;
+			color: white;
+		}
+		a {
+			color: white;
 		}
 	</style>
 </head>
