@@ -9,7 +9,7 @@
 </head>
 <body>
      <h1>Agenda</h1>
-     <form action="Cadastro_agenda.php" method="post">
+     <form  method="post" action="Cadastro_agenda.php" enctype='multipart/form-data'>
      <fieldset>
          <br>
          <div>
@@ -81,9 +81,14 @@
              <label>E-mail:</label>
              <input type="email" name="email" placeholder="@gmail">
          </div>
+         <br>
+         <div class="form-item">
+            <input type="file" id="foto" name="foto" accept="image/*" />
+        </div> 
         </br>
         <div id="botao">            
             <button  type="submit">enviar</button>
+            <a href='index.php'> Voltar</a>
         </div>
      </fieldset>
      </form> 

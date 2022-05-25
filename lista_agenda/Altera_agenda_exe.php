@@ -63,10 +63,10 @@ if( in_array($imageFileType,$extensions_arr) ){
                      WHERE id_agenda=".$id_agenda;
           }
 	    
-	$result = mysqli_query($con, $sql);
-	if($result)
-		echo "Dados alterados com sucesso <br>";
-	else
-		echo "Erro ao alterar no banco de dados: ".mysqli_error($con)."<br>";  
+          $result = mysqli_query($con, $sql);
+          if($result)
+            echo "Dados alterados com sucesso <br>";
+          else
+            echo "Erro ao alterar no banco de dados: ".mysqli_error($con)."<br>";  
 ?>
-<a href='index.php'> Voltar</a>
+        <a href='index.php'> Voltar</a>

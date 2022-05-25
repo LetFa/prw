@@ -17,8 +17,9 @@
 </head>
 <body>
     <h1>Cadastro de Clientes  - IFSP</h1>
+    <?php echo "<img class='center' src='data:image/jpeg;base64,".base64_encode( $row["foto_blob"] )."' align='center' width='150' height='150'/>"; ?>  
     <div id="teste">
-        <form method="post" action="altera_agenda_exe.php">
+        <form method="post" action="altera_agenda_exe.php" enctype='multipart/form-data'>
             <fieldset>
                 <div class="form-item">
                     <label for="nome">Nome:</label>
@@ -64,6 +65,9 @@
                     <label for="email">E-mail:</label>
                     <input type="text" id="email" name="email" value="<?php echo $row['email']?>" placeholder="Digite o email">
                 </div>
+                <div class="form-item">
+                    <input type="file" id="foto" name="foto" accept="image/*" />
+                </div>  
                 <br>
                 <div class="form-item">
                     <input id="btn" type="submit" value="Enviar" >

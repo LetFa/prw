@@ -43,6 +43,7 @@
             while ($row = mysqli_fetch_array($result)) {
                 echo "<tr>";
                 echo "<td>" .$row['id_agenda']. "</td>";
+                echo "<td><img src='data:image/jpeg;base64,".base64_encode( $row["foto_blob"] )."' width='150' height='150'/></td>";
                 echo "<td><a href='altera_agenda.php?id_agenda=".$row['id_agenda']."'>" .$row['nome']. "</a></td>";
                 echo "<td>" .$row['apelido']. "</td>";
                 echo "<td>" .$row['endereco']. "</td>";
