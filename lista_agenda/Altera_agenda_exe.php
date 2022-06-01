@@ -43,7 +43,7 @@ if( in_array($imageFileType,$extensions_arr) ){
             estado='".$estado."',
             telefone='".$telefone."',
             celular='".$celular."',
-            email='".$email."'
+            email='".$email."',
             foto_blob='".$fotoBlob."',
             foto_nome='".$fotoNome."'
           WHERE id_agenda=".$id_agenda;            

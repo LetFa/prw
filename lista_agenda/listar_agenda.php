@@ -27,6 +27,7 @@
         <!-- tr>th*4 -->
         <tr>
             <th>Código</th>
+            <th>Foto</th>
             <th>Nome</th>
             <th>Apelido</th>
             <th>Endereço</th>
