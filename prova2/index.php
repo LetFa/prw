@@ -6,6 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menu Principal</title>
     <link rel="stylesheet" href="menu.css">
+    <style>
+        body {
+            background-color: #606060;
+        }
+        h1{
+            background-color: #bbb;
+            width: 300px;
+            border-radius: 10px;
+            text-align: center;
+            margin: auto;
+        }
+        div#menu a {
+            color: white;
+            text-decoration: none
+        }
+    </style>
 </head>
 <body>
     <h1>Menu Principal</h1>

@@ -18,7 +18,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Listagem de Fluxo de Caixa</title>
     <link rel="stylesheet" href="lista.css">
-    
+    <style>
+        body{
+            background-color: #606060;
+
+        }
+        table tr {
+            background-color: #bbb;
+            
+        }
+        h1 {
+            background-color: #bbb;
+            width: 500px;
+            border-radius: 10px;
+            margin: auto;
+            margin-top: 20px;
+        }
+    </style>
 </head>
 <body>
 

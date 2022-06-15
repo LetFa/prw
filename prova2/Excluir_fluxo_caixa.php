@@ -26,7 +26,7 @@
 	<title>Document</title>
 	<style>
 		body{
-			background-color: FireBrick;
+			background-color: red;
 			color: white;
 		}
 		a {

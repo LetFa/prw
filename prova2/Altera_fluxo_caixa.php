@@ -14,6 +14,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro de Fluxo de Caixa</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            background-color: #606060;
+        }
+        h1{
+            color: white;
+            text-align: center;
+        }
+        fieldset {
+            width: 300px;
+            margin: auto;
+            background-color: #bbb;
+        }
+    </style>
 </head>
 <body>
     <h1>Cadastro de Fluxo de Caixa</h1>
