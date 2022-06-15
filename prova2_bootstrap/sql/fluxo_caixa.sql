@@ -1,5 +1,5 @@
 -- Drop banco de dados
--- drop database prova2;
+-- drop database prova2_bootstrap;
 
 -- Criação do banco de dados
 create database fluxo_caixa;

@@ -2,7 +2,7 @@
   $hostname = "localhost";
   $port = 3307;
   $username = "root";
-  $password = "";
+  $password = "#Deusefiel321";
   $database = "fluxo_caixa";
   $con = mysqli_connect($hostname, $username, $password, $database, $port);
   if(mysqli_connect_errno()){

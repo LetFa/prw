@@ -10,7 +10,6 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-
 </head>
 <body>
      
@@ -19,8 +18,8 @@
      <form  method="post" action="Cadastro_fluxo_caixa.php" enctype='multipart/form-data'>
             <div class="form-group">
               <label>Data:</label>
-              <input type="date" class="form-control" id="date" aria-describedby="date">
-              <small id="emailHelp" class="form-text text-muted"></small>
+              <input type="date" class="form-control" name="data" id="data" aria-describedby="data">
+              <small id="data" name="data" class="form-text text-muted"></small>
             </div>
             <div class="form-group">
               <label>Tipo:</label>
@@ -29,13 +28,13 @@
             </div>
             <div class="form-group">
                 <label>Valor:</label>
-                <input type="valor" class="form-control" id="valor" aria-describedby="valor" placeholder="Informe seu valor">
-                <small id="valor" class="form-text text-muted"></small>
+                <input type="valor" class="form-control" name="valor" id="valor" aria-describedby="valor" placeholder="Informe seu valor">
+                <small name="valor" id="valor"  class="form-text text-muted"></small>
               </div>
               <div class="form-group">
                 <label>Histórico:</label>
-                <input type="historico" class="form-control" id="historico" aria-describedby="historico">
-                <small id="historico" class="form-text text-muted"></small>
+                <input type="historico" class="form-control" name="historico" id="historico" aria-describedby="historico">
+                <small name="historico" id="historico" class="form-text text-muted"></small>
               </div>
               <div class="form-group">
                 <label for="cheque">Cheque:</label>
