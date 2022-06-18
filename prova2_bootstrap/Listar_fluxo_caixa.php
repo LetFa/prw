@@ -1,6 +1,6 @@
 <?php 
 
-    include ('conexao.php');
+    require __DIR__. '/conexao.php';
     $sql = 'SELECT * FROM fluxo_caixa';
 
     //retorna todos os dados da consulta
@@ -36,23 +36,22 @@
             <th scope="col">Valor</th>
             <th scope="col">historico</th>
             <th scope="col">Cheque</th>
-            <th scope="col">Excluir</th>
+            <th scope="col"></th>
+            <th scope="col"></th>
         </tr>
         </thead>
-    </div>  
-        
-      
-
+    </div>
         <?php 
             while ($row = mysqli_fetch_array($result)) {
                 echo "<tr>";
                 echo "<td>" .$row['id_fluxo_caixa']. "</td>";
-                echo "<td><a href='altera_fluxo_caixa.php?id_fluxo_caixa=".$row['id_fluxo_caixa']."'>" .$row['data']. "</a></td>";
+                echo "<td>".(new DateTime($row['data']))->format("d/m/Y")."</td>";
                 echo "<td>" .$row['tipo']. "</td>";
                 echo "<td>" .$row['valor']. "</td>";
                 echo "<td>" .$row['historico']. "</td>";
                 echo "<td>" .$row['cheque']. "</td>";
-                echo "<td><a href='excluir_fluxo_caixa.php?id_fluxo_caixa=".$row['id_fluxo_caixa']."'>Excluir</a></td>";
+                echo "<td><a class='btn btn-info' href='altera_fluxo_caixa.php?id_fluxo_caixa=".$row['id_fluxo_caixa']."'>Editar</a></td>";
+                echo "<td><a class='btn btn-danger' href='excluir_fluxo_caixa.php?id_fluxo_caixa=".$row['id_fluxo_caixa']."'>Excluir</a></td>";
                 echo "</tr>";
             }
         ?>

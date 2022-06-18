@@ -63,7 +63,7 @@
               <label class="form-check-label" for="exampleCheck1">Clique em mim</label>
             </div>
             <button type="submit" class="btn btn-primary">Enviar</button>
-            <a href="index.php">Voltar</a> 
+            <a class="btn btn-dark" href="listar_fluxo_caixa.php">Voltar</a> 
                 <input name="id_fluxo_caixa" type="hidden" value="<?php echo $row['id_fluxo_caixa']?>">
             </fieldset>
         </form>
