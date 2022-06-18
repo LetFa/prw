@@ -1,5 +1,5 @@
 <?php
-    include('conexao.php');   
+    require __DIR__ ./'conexao.php';   
 
     $tipo = $_POST['tipo'];
   

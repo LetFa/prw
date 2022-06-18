@@ -1,0 +1,19 @@
+@charset "UTF-8";
+body{
+    background-color: rgb(99, 82, 119);
+}
+fieldset {
+    width: 300px;
+    height: 370px;
+    margin: auto;
+    background-color: rgb(205, 182, 231);
+    position: absolute;
+    top: 200px;
+    left: 650px;
+}
+h1 {
+    text-align: center;
+    position: absolute;
+    top: 100px;
+    left: 620px;
+}
