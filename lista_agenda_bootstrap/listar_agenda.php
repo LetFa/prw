@@ -1,6 +1,6 @@
 <?php 
 
-    require __DIR__. /'conexao.php';
+    include ('conexao.php');
     $sql = 'SELECT * FROM agenda';
 
     //retorna todos os dados da consulta
@@ -26,7 +26,7 @@
 <body>
      
     <h1 align="center">Listagem da Agenda</h1><br>
-    <table class="table table-dark" align="center" border="1" width="700">
+    <table class="table table-dark" align="center" border="1">
         <!-- tr>th*4 -->
         <thead>
           <tr>

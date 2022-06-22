@@ -1,5 +1,5 @@
 <?php
-   require __DIR__. /'conexao.php';
+   include ('conexao.php');
    $id_agenda = $_GET['id_agenda'];
    $sql = 'SELECT * FROM agenda where id_agenda='.$id_agenda;
    $result = mysqli_query($con, $sql);

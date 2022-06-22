@@ -1,5 +1,5 @@
 <?php
-   require __DIR__. /'conexao.php';
+   include ('conexao.php');
    $id_fluxo_caixa = $_GET['id_fluxo_caixa'];
    $sql = 'SELECT * FROM fluxo_caixa where id_fluxo_caixa='.$id_fluxo_caixa;
    $result = mysqli_query($con, $sql);

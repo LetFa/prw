@@ -1,5 +1,5 @@
 <?php
-   require __DIR__. /'conexao.php';
+   include ('conexao.php');
 
    // Upload da foto     
    $fotoNome = $_FILES['foto']['name'];
